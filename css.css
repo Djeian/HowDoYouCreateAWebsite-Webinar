@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --army-green: #6A9942;
+    --dark: #1f1f1f;
+    --html-tag-blue: #569CD6;
+    --javascript-yellow: #F0DB4E;
+    --string-color: #CE9178;
+    --js-css-attribute: #9CDCFE;
+    --html-grey: #808080;
+    --js-attribute: #DCDCAA;
+    --html-logo-color: #F16528;
+    --parenthesis-color-blue: #1B8FFF;
+    --markup-color: #0C9E56;
+    --greyish-white: #CCCCCC;
+    --html-atribute: #68CDFE;
+    --css-class: #D7BA7D;
+    --css-color: #16A1DC;
+
+    --padding-horizontal: 40px;
+    --padding-vertical: 20px;
+
+    --regular: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Victor Mono", monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--dark);
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px var(--padding-horizontal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-weight: var(--regular);
+}
+
+p {
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+/* ELEMENT COLORS */
+.p_tag {
+    color: var(--html-tag-blue);
+}
+
+.angle_brackets {
+    color: var(--html-grey);
+}
+
+.js_color {
+    color: var(--javascript-yellow);
+}
+
+.css_color {
+    color: var(--css-color);
+}
+
+.html_color {
+    color: var(--html-logo-color);
+}
+
+.markup_color {
+    color: var(--markup-color);
+}
+
+/* HERO SECTION */
+.hero_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--padding-vertical);
+}
+
+.hero_main {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.hero_left_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hand_img {
+    width: 450px;
+}
+
+.hero_right_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.hero_bot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.frieren {
+    display: flex;
+    width: 300px;
+}
+
+.hero_bot_right {
+    display: flex;
+}
+
+.pc_img {
+    display: flex;
+    margin-top: auto;
+}
+
+.htmlCss_img {
+    display: flex;
+    width: 300px;
+}
+
+
+/* SECTION 1 INTRODUCTORY */
+.section_one {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section_one h3 {
+    font-size: 2rem;
+}
+
+/* WHAT IS A WEBSITE */
+.sec_one_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 10px;
+    flex: 1;
+}
+
+.sec_one_top_para {
+    display: flex;
+    flex-direction: column;
+}
+
+.website_gif_con {
+    display: flex;
+    justify-content: center;
+    flex: 1;   
+}
+
+.website_gif {
+    width: 450px;
+}
+
+
+/* WHAT IS A WEBSITE COMPOSED OF */
+.sec_one_main_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.language_logo_con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex: 1;
+}
+
+.css_logo {
+    width: 100px;
+}
+
+.js_logo {
+    width: 100px;
+}
+
+.html_logo {
+    width: 100px;
+}
+
+.sec_one_main_top_para {
+    text-align: end;
+}
+
+/* WHAT IS A MARKUP PROGRAMMING LANGUAGE */
+.sec_one_main_bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.sec_one_main_bot_para {
+    display: flex;
+    flex-direction: column;
+}
+
+.markup_logo_con {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.markup_logo {
+    width: 100px;
+}
+
+/* WHAT IS A PROGRAMMING LANGUAGE */
+.sec_one_bot {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+}
+
+.helloWorld_con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.js_helloworld {
+    width: 325px;
+    align-self: start;
+
+}
+
+.java_helloworld {
+    width: 350px;
+    align-self: end;
+}
+
+.csharp_helloworld {
+    width: 350px;
+    align-self: start;
+}
