@@ -66,6 +66,7 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     padding: 0px var(--padding-horizontal);
+    overflow: hidden;
 }
 
 /* ELEMENT COLORS *************************************************************************************/
@@ -380,6 +381,7 @@ section {
 .section_three {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -478,4 +480,62 @@ section {
 
 .js_gif_website {
     width: 85%;
+}
+
+/* SECTION 5 */
+.section_five {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    position: relative;
+}
+
+.thank_you_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+.sec_five_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.js_code_img {
+    width: 600px;
+    align-self: center;
+    padding-left: var(--padding-horizontal);
+}
+
+.css_code_inverted {
+    width: 300px;
+}
+
+.html_code_right {
+    width: 600px;
+    align-self: end;
+}
+
+.thank_you {
+    width: 100%;
+    display: inline-block;
+    border-right: 1px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+        typing 2s steps(19) 1s infinite alternate, cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 19ch; }
 }
