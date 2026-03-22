@@ -58,12 +58,12 @@ p {
 }
 
 img {
-    width: 100%;
+    width: clamp(5px, 70%, 500px);
     height: auto;
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
     padding: 0px var(--padding-horizontal);
     overflow: hidden;
@@ -140,6 +140,11 @@ section {
     display: flex;
     justify-content: space-between;
     flex: 1;
+    flex-wrap: wrap;
+}
+
+.hero-con {
+    flex: 1 1 400px;
 }
 
 .hero_left_main {
@@ -149,7 +154,24 @@ section {
 }
 
 .hand_img {
-    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(250px, 50vw, 450px);
+}
+
+@media (max-width: 800px) {
+    .introductory_paragraph {
+        text-align: center;
+    }
+
+    .sec_prog {
+        text-align: center;
+    }
+
+    .sec_one_top_para {
+        text-align: center;
+    }
 }
 
 .hero_right_main {
@@ -160,15 +182,36 @@ section {
     flex: 1;
 }
 
+.webDev_img,
+.img_101 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero_bot {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
+    flex-wrap: wrap;
 }
 
 .frieren {
     display: flex;
-    width: 300px;
+    justify-content: center;
+    align-items: center;
+    width: clamp(200px, 40vw, 300px);
+}
+
+@media (max-width: 980px) {
+    .frieren {
+        width: clamp(400px, 40vw, 300px);
+    }
+
+    .hero_bot {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .hero_bot_right {
@@ -177,12 +220,15 @@ section {
 
 .pc_img {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: auto;
+    width: clamp(120px, 40vw, 60%);
 }
 
 .htmlCss_img {
     display: flex;
-    width: 300px;
+    width: clamp(200px, 40vw, 300px);
 }
 
 
@@ -193,6 +239,13 @@ section {
     gap: 10px;
 }
 
+@media (max-width: 800px) {
+    .section_one {
+        display: flex;
+        gap: 70px;
+    }
+}
+
 /* WHAT IS A WEBSITE */
 .sec_one_top {
     display: flex;
@@ -200,13 +253,19 @@ section {
     justify-content: space-between;
     gap: 20px;
     padding-top: 10px;
-    flex: 1;
+
+    flex-wrap: wrap;
+}
+
+.sec-con {
+    flex: 1 1 400px;
 }
 
 .sec_one_top_para {
     display: flex;
     flex-direction: column;
 }
+
 
 .website_gif_con {
     display: flex;
@@ -215,7 +274,10 @@ section {
 }
 
 .website_gif {
-    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(300px, 50vw, 350px);
 }
 
 
@@ -225,21 +287,17 @@ section {
     justify-content: space-between;
     align-items: center;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .language_logo_con {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
     flex: 1;
 }
 
 .css_logo {
-    width: 100px;
-}
-
-.js_logo {
     width: 100px;
 }
 
@@ -258,6 +316,7 @@ section {
     align-items: center;
     gap: 20px;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .sec_one_main_bot_para {
@@ -282,6 +341,7 @@ section {
     align-items: center;
     gap: 40px;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .helloWorld_con {
@@ -314,12 +374,14 @@ section {
 .section_two {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+
 }
 
 .sec_two_top {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
     padding: var(--padding-horizontal) var(--padding-horizontal) 0px;
 }
 
@@ -330,9 +392,9 @@ section {
 }
 
 .html_logo_con {
-    width: 75%;
     display: flex;
     justify-content: center;
+    flex: 1;
 }
 
 .html_logo {
@@ -360,7 +422,7 @@ section {
 }
 
 .html_code {
-    width: 900px;
+    width: clamp(300px, 80vw, 900px);
 }
 
 .left_dude {
@@ -392,10 +454,13 @@ section {
 .sec_three_bot {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .sec_three_bot_left {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
 }
@@ -411,6 +476,9 @@ section {
 }
 
 .css_website {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 95%;
 }
 
@@ -425,6 +493,7 @@ section {
     display: flex;
     justify-content: space-between;
     padding: var(--padding-horizontal) var(--padding-horizontal) 0px;
+    flex-wrap: wrap;
 }
 
 .sec_four_top_para {
@@ -440,7 +509,7 @@ section {
 }
 
 .js_logo {
-    width: 125px;
+    width: clamp(90px, 30vw, 125px);
 }
 
 .sec_four_bot {
@@ -448,6 +517,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    flex-wrap: wrap;
 }
 
 .sec_four_bot_left {
@@ -464,7 +534,7 @@ section {
 
 .hacking_meme {
     display: flex;
-    width: 325px;
+    width: clamp(200px, 40vw, 325px);
     z-index: 2;
     position: absolute;
     bottom: 0;
@@ -479,6 +549,9 @@ section {
 }
 
 .js_gif_website {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 85%;
 }
 
@@ -495,8 +568,9 @@ section {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 45%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .sec_five_right {
@@ -523,6 +597,7 @@ section {
 
 .thank_you {
     width: 100%;
+    font-size: clamp(24px, 5vw, 64px);
     display: inline-block;
     border-right: 1px solid white;
     overflow: hidden;
